@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row mt-4">
+        <table class="table">
+            <thead>
+              <tr>
+                <!---<th scope="col">ID</th>-->
+                <th scope="col">Product Code</th>
+                <th scope="col">Product Name</th>
+                <th scope="col">Manufacturing Date</th>
+                <th scope="col">expiryDate</th>
+                <th scope="col">Brand</th>
+                <th scope="col">Price</th>
+                <th scope="col">Seller Name</th>
+                <th scope="col">Distributor Name</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor = "let i of product">
+                
+                <!---<td>{{i._id}}</td>---->
+                <td>{{i.productCode}}</td>
+                <td>{{i.productName}}</td>
+                <td>{{i.manufacturingDate}}</td>
+                <td>{{i.expiryDate}}</td>
+                <td>{{i.brand}}</td>
+                <td>{{i.prize}}</td>
+                <td>{{i.sellerName}}</td>
+                <td>{{i.distributorName}}</td>
+                
+              </tr>
+              
+            </tbody>
+          </table>
+    </div>
+</div>
